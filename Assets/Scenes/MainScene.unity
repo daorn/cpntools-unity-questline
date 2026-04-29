@@ -555,7 +555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &492932489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &808228494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2023,6 +2023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   pauseMenu: {fileID: 808228493}
+  questLog: {fileID: 492932488}
 --- !u!114 &1652677151
 MonoBehaviour:
   m_ObjectHideFlags: 0

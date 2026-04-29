@@ -2,14 +2,21 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
-    private bool isPaused = false;
+    private bool isPaused;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject questLog;
 
     private void Awake()
     {
         pauseMenu.SetActive(false);
+        questLog.SetActive(false);
+    }
+
+    private void OnJournal(InputValue value)
+    {
+        questLog.SetActive(!questLog.activeSelf);
     }
 
     private void OnPause(InputValue value)
