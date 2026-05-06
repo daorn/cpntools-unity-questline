@@ -1,0 +1,129 @@
+CPN Tools state space report for:
+/cygdrive/D/CPNTools/SavedNets/DAT355projectnet_v2.cpn
+Report generated: Wed May  6 18:46:40 2026
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  31
+     Arcs:   30
+     Secs:   0
+     Status: Full
+
+  Scc Graph
+     Nodes:  31
+     Arcs:   30
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     OldLadyQuest'DeliverChoice 1
+                             1          0
+     OldLadyQuest'ItemFound 1
+                             1          0
+     OldLadyQuest'LadyDied 1 1          0
+     OldLadyQuest'LadyStatus 1
+                             1          0
+     OldLadyQuest'QuestActive 1
+                             1          0
+     OldLadyQuest'QuestCompleteBetrayal 1
+                             1          0
+     OldLadyQuest'QuestCompleteGood 1
+                             1          0
+     OldLadyQuest'QuestFailed 1
+                             1          0
+     OldLadyQuest'QuestInactive 1
+                             1          0
+     OldLadyQuest'QuestRefused 1
+                             1          0
+     OldLadyQuest'RefusalCount 1
+                             1          0
+     OldLadyQuest'TalkingToLady 1
+                             1          0
+
+  Best Upper Multi-set Bounds
+     OldLadyQuest'DeliverChoice 1
+                         1`OldLady++
+1`ShadyCharacter
+     OldLadyQuest'ItemFound 1
+                         1`HasItem++
+1`LostItem
+     OldLadyQuest'LadyDied 1
+                         1`Dead
+     OldLadyQuest'LadyStatus 1
+                         1`Alive
+     OldLadyQuest'QuestActive 1
+                         1`true
+     OldLadyQuest'QuestCompleteBetrayal 1
+                         1`Betrayal
+     OldLadyQuest'QuestCompleteGood 1
+                         1`Good
+     OldLadyQuest'QuestFailed 1
+                         1`Failed
+     OldLadyQuest'QuestInactive 1
+                         1`true
+     OldLadyQuest'QuestRefused 1
+                         1`Failed
+     OldLadyQuest'RefusalCount 1
+                         1`0++
+1`1++
+1`2
+     OldLadyQuest'TalkingToLady 1
+                         1`true
+
+  Best Lower Multi-set Bounds
+     OldLadyQuest'DeliverChoice 1
+                         empty
+     OldLadyQuest'ItemFound 1
+                         empty
+     OldLadyQuest'LadyDied 1
+                         empty
+     OldLadyQuest'LadyStatus 1
+                         empty
+     OldLadyQuest'QuestActive 1
+                         empty
+     OldLadyQuest'QuestCompleteBetrayal 1
+                         empty
+     OldLadyQuest'QuestCompleteGood 1
+                         empty
+     OldLadyQuest'QuestFailed 1
+                         empty
+     OldLadyQuest'QuestInactive 1
+                         empty
+     OldLadyQuest'QuestRefused 1
+                         empty
+     OldLadyQuest'RefusalCount 1
+                         empty
+     OldLadyQuest'TalkingToLady 1
+                         empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     10 [31,30,27,26,25,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.

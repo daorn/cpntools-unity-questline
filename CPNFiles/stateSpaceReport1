@@ -1,0 +1,92 @@
+CPN Tools state space report for:
+/cygdrive/D/CPNTools/SavedNets/DAT355projectnet.cpn
+Report generated: Tue May  5 18:58:35 2026
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  8
+     Arcs:   8
+     Secs:   0
+     Status: Full
+
+  Scc Graph
+     Nodes:  8
+     Arcs:   8
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     OldLadyQuest'DeliverChoice 1
+                             1          0
+     OldLadyQuest'ItemFound 1
+                             1          0
+     OldLadyQuest'QuestActive 1
+                             1          0
+     OldLadyQuest'QuestComplete 1
+                             1          0
+     OldLadyQuest'QuestFailed 1
+                             1          0
+     OldLadyQuest'QuestInactive 1
+                             1          0
+
+  Best Upper Multi-set Bounds
+     OldLadyQuest'DeliverChoice 1
+                         1`OldWoman++
+1`ShadyCharacter
+     OldLadyQuest'ItemFound 1
+                         1`HasItem++
+1`LostItem
+     OldLadyQuest'QuestActive 1
+                         1`true
+     OldLadyQuest'QuestComplete 1
+                         1`Complete
+     OldLadyQuest'QuestFailed 1
+                         1`Failed
+     OldLadyQuest'QuestInactive 1
+                         1`true
+
+  Best Lower Multi-set Bounds
+     OldLadyQuest'DeliverChoice 1
+                         empty
+     OldLadyQuest'ItemFound 1
+                         empty
+     OldLadyQuest'QuestActive 1
+                         empty
+     OldLadyQuest'QuestComplete 1
+                         empty
+     OldLadyQuest'QuestFailed 1
+                         empty
+     OldLadyQuest'QuestInactive 1
+                         empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     [5,8]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.

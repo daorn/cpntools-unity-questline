@@ -547,10 +547,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1686516852295482995, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5385653193961865498}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 51304417828567751}
+    - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2870530827270142435}
   m_SourcePrefab: {fileID: 100100000, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
 --- !u!4 &3391271029171007971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1686516852295482995, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
   m_PrefabInstance: {fileID: 4068862817653460880}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4305147090363611277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
+  m_PrefabInstance: {fileID: 4068862817653460880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &51304417828567751
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305147090363611277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2870530827270142435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305147090363611277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a077d3ccb997f314889bb5a732c0f735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
+  npcType: 0
+  interactionRange: 3
+  interactionPrompt: Press E to interact
