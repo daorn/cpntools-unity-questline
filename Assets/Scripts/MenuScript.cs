@@ -15,9 +15,20 @@ public class MenuScript : MonoBehaviour
     private void OnPause(InputValue value)
     {
         if (isPaused)
+        {
+            Debug.Log("Pause Menu closed");
             Resume();
+        }
         else
+        {
+            Debug.Log("Pause Menu opened");
             PauseMenu();
+        }
+    }
+
+    private void OnInteract(InputValue value)
+    {
+        Debug.Log("Interact");
     }
     
     public void PauseMenu()

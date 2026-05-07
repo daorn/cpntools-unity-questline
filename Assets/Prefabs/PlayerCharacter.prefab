@@ -641,6 +641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1686516852295482995, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.68992
@@ -713,9 +717,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2622895178418491425}
-    - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2484813415323494042}
   m_SourcePrefab: {fileID: 100100000, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
 --- !u!4 &2805078878727557310 stripped
 Transform:
@@ -754,7 +755,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: df70fa95-8a34-4494-b137-73ab6b9c7d37
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &2622895178418491425
@@ -771,15 +772,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 8
   rotationSpeed: 5
---- !u!114 &2484813415323494042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3621851844854389200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7514aa82f16246b7c2f695d76e6b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction

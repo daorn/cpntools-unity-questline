@@ -530,6 +530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShadyCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
+      propertyPath: m_TagString
+      value: ShadyCharacter
+      objectReference: {fileID: 0}
     - target: {fileID: 1686516852295482995, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.23849
@@ -583,9 +587,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2962705359572693352}
-    - targetCorrespondingSourceObject: {fileID: 272878259642464029, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7698890951970331682}
   m_SourcePrefab: {fileID: 100100000, guid: 73ac2b8077a2e2e4bacb8f7b339e3442, type: 3}
 --- !u!4 &777013056108539980 stripped
 Transform:
@@ -618,18 +619,3 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7698890951970331682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2190511048846670114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a077d3ccb997f314889bb5a732c0f735, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
-  npcType: 1
-  interactionRange: 3
-  interactionPrompt: Press E to interact

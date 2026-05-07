@@ -124,10 +124,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1868020502022397541}
   - component: {fileID: 6004769367463072297}
-  - component: {fileID: 3191359488556634581}
+  - component: {fileID: 7648522506423975142}
   m_Layer: 0
   m_Name: Item
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3191359488556634581
+--- !u!114 &7648522506423975142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,12 +179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5267233770930557231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a077d3ccb997f314889bb5a732c0f735, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f350a9d7a68b7f4e955d0046494e033, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
-  npcType: 2
-  interactionRange: 2
-  interactionPrompt: Press E to interact
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSpinning
+  rotateSpeed: 15
 --- !u!1 &5714252797957359267
 GameObject:
   m_ObjectHideFlags: 0
