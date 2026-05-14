@@ -26,9 +26,16 @@ public class MenuScript : MonoBehaviour
         }
     }
 
-    private void OnInteract(InputValue value)
+    public void CursorOn()
     {
-        Debug.Log("Interact");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void CursorOff()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     public void PauseMenu()
@@ -36,8 +43,7 @@ public class MenuScript : MonoBehaviour
         isPaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        CursorOn();
     }
 
     public void Resume()
@@ -45,8 +51,7 @@ public class MenuScript : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        CursorOff();
     }
 
     public void Restart()
