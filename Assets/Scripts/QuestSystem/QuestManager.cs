@@ -30,9 +30,15 @@ namespace QuestSystem {
 
         /// Player refuses the quest → fires RefuseQuest
         public void RefuseQuest() => FireByName("RefuseQuest");
+        
+        /// Player refuses the quest for the last time → fires RefuseQuestFinal
+        public void RefuseQuestFinal() => FireByName("RefuseQuestFinal");
 
         /// Player finds the item in the world → fires FindItem
         public void FindItem() => FireByName("FindItem");
+        
+        /// Player loses the item → fires LoseItem
+        public void LoseItem() => FireByName("LoseItem");
 
         /// Player delivers to old lady → fires ChooseOldLady
         public void DeliverToOldLady() => FireByName("ChooseOldLady");
@@ -53,6 +59,7 @@ namespace QuestSystem {
         public bool IsQuestCompleteGood()  => TokensIn("QuestCompleteGood") > 0;
         public bool HasItem()              => TokensIn("ItemFound") > 0;
         public bool IsTalkingToLady()      => TokensIn("TalkingToLady") > 0;
+        public bool IsQuestInProgress() => TokensIn("QuestActive") > 0 || TokensIn("ItemFound") > 0;
 
         public List<string> GetEnabledActionNames() {
             var names = new List<string>();
