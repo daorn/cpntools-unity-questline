@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class MenuScript : MonoBehaviour
+public class GameMenuScript : MonoBehaviour
 {
     private bool isPaused;
     [SerializeField] private GameObject pauseMenu;
@@ -60,9 +61,10 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void Quit()
+    public void QuitToMainMenu()
     {
-        Time.timeScale = 1;
-        Application.Quit();
+        CursorOn();
+        Time.timeScale = 0;
+        SceneManager.LoadSceneAsync(0);
     }
 }

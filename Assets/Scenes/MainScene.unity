@@ -678,7 +678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223494867}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1508641, y: -0.0013611816, z: 0.00020773117, w: 0.9885536}
+  m_LocalRotation: {x: 0.150864, y: -0.0015467927, z: 0.00023605743, w: 0.9885533}
   m_LocalPosition: {x: -11.76, y: 3.58, z: -16.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2960,8 +2960,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1600041052}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_TargetAssemblyTypeName: GameMenuScript, Assembly-CSharp
+        m_MethodName: QuitToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3807,7 +3807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328023783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15086406, y: -0.0013611813, z: 0.00020773114, w: 0.9885536}
+  m_LocalRotation: {x: 0.150864, y: -0.0015467927, z: 0.00023605737, w: 0.98855335}
   m_LocalPosition: {x: -11.76, y: 3.58, z: -16.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6959,6 +6959,14 @@ PrefabInstance:
     - target: {fileID: 3621851844854389200, guid: d437df431549d2b44ad493be885d2ca8, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777438630311627993, guid: d437df431549d2b44ad493be885d2ca8, type: 3}
+      propertyPath: m_Radius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777438630311627993, guid: d437df431549d2b44ad493be885d2ca8, type: 3}
+      propertyPath: m_Center.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
